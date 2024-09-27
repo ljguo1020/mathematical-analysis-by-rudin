@@ -1,0 +1,9 @@
+# Ignore the font folder
+font/
+
+*.aux
+*.log
+*.synctex.gz
+*.synctex
+*.out
+*.toc
