@@ -1,0 +1,48 @@
+\usepackage{amsmath, amssymb, array}
+\newfontfamily\scfont{GoSmallCaps.ttf}[
+  AutoFakeBold = 2.0,
+  SmallCapsFont = *
+]
+
+\ElegantCoverInfo{
+  title = {\scfont Principles Of  \\[-5pt] \scfont Mathematical Analysis},
+  subtitle = {数学分析原理},
+  cover image = { cover-3.jpg },
+  author = {\scfont Walter Rudin \& Ljguo},
+  institute = None
+}
+\ExplSyntaxOn
+\elegant_declare_language:nn { en }
+  {
+    \RequirePackage[UTF8]{ctex}
+    \RequirePackage{bbding}
+    \elegant_define_name:n 
+      {
+        contents = Contents,
+        figure = Figure,
+        table = Table,
+        listoffigure = List Of Figures,
+        listoftable = List Of Tables,
+        chapter / before  = ,
+          chapter / after = ,
+          chapter / number = \arabic{chapter},
+        section / number = \thesection,
+        subsection / number = \thesubsection,
+        subsubsection / number = \thesubsubsection,
+        theorem = Theorem,
+          theorem / icon = $\heartsuit$,
+        definition = Definition,
+          definition / icon = $\clubsuit$,
+        postulate = Postulate,
+          postulate / icon = $\Delta$,
+        axiom = Axiom,
+        corollary = Corollary,
+        lemma = Lemma,
+          lemma / icon = $\spadesuit$,
+        proposition = Proposition,
+        remark = Remark,
+        introduction = Introduction,
+          introduction / icon = \SquareShadowBottomRight
+      }
+  }
+\ExplSyntaxOff
